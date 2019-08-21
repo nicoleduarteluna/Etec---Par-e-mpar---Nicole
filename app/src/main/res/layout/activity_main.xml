@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblNumero"
+        android:layout_width="61dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/numero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNumero"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="dias de luta na etec"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblNumero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblNumero" />
+
+    <Button
+        android:id="@+id/btnProcessar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/processar"
+        android:textColor="#41AC97"
+        android:textColorHint="#00000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumero" />
+
+    <TextView
+        android:id="@+id/lblResultado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/resultado"
+        app:layout_constraintStart_toStartOf="@+id/lblNumero"
+        app:layout_constraintTop_toBottomOf="@+id/btnProcessar" />
+
+    <TextView
+        android:id="@+id/lblResultado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:text="______________"
+        app:layout_constraintStart_toEndOf="@+id/lblResultado1"
+        app:layout_constraintTop_toTopOf="@+id/lblResultado1" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,1 @@
+string.xml- quando fazemos a inclusão de resources aparece aqui 
