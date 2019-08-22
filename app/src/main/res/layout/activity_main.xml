@@ -27,7 +27,6 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="dias de luta na etec"
         app:layout_constraintBaseline_toBaselineOf="@+id/lblNumero"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/lblNumero" />
@@ -41,6 +40,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:onClick="onProcessar"
         android:text="@string/processar"
         android:textColor="#41AC97"
         android:textColorHint="#00000000"
